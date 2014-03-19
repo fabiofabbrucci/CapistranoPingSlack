@@ -6,7 +6,7 @@ A simple recipe for Slack integration
 # Installation
 
 1. Create `config/recipes` folder in your root
-2. Copy our `slack.rb` recipe inside it
+2. Copy our [slack.rb](config/recipes/slack.rb) recipe inside it
 3. Add `load 'config/recipes/slack.rb'` in your `Capfile`
 4. Run `cap -vT` and check if `slack:update` task exists
 5. Add `slack:update` as to a capistrano hook
