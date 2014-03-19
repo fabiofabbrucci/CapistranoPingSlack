@@ -26,24 +26,24 @@ set :domain,            "www.website.com"
 ```
 
 #### slack_channel
-Is the channel of slack where you want it posts messages
+It is the channel of slack where you want to post messages
 
 #### slack_user
-Is the name of your Bot
+It is the name of your Bot
 
 #### slack_emoji
-Is the name of your Bot. [Here a full list](http://www.emoji-cheat-sheet.com/)
+It is the emoji of your Bot. [Here a full list](http://www.emoji-cheat-sheet.com/)
 
 #### slack_key
-Is the key.
-To get your key you need to:
+It is the key token.
+In order to get your key you need to:
 
 1. Login to your *htpp://your_domain.slack.com* and go to services list
-2. Add a new service. Its name is **Incoming WebHooks**. It allows you to post to slack through curl.
-2. Inside the tab for **Instructions for creating Incoming WebHooks** you can find the **token** in an example of curl. **Get it!**
+2. Add a new service. Its name is **Incoming WebHooks**. It allows you to post on slack through curl.
+2. Inside the **Instructions for creating Incoming WebHooks** tab you can find the **token** in a curl example. **Take it!**
 3. Copy it here, in your `slack_key` variable
 
-To test it, copy the example of curl syntax provided by slack and run it in you shell.
+In order to test your key, copy the curl example provided and run it in your shell.
 Eg.:
 ```
 curl -X POST --data 'payload={"channel": "#general", "username": "webhookbot", "text": "Ttext", "icon_emoji": ":ghost:"}' https://your_domain.slack.com/services/hooks/incoming-webhook?token=123456789
@@ -58,4 +58,4 @@ Contact me or open an issue.
 Feel free to fork and propose any kind of changes.
 
 # Special thanks
-To [GNV](http://gnvpartners.com) that's allow me in having fun with with frontend and system integration.
+To [GNV](http://gnvpartners.com), which is giving me the chance to have fun with frontend development and system integration. With love.
